@@ -1,0 +1,7 @@
+builds
+.terraform.lock.hcl
+.terraform
+terraform.tfstate.backup
+terraform.tfstate
+env.tf
+.terraform.tfstate.lock.info
