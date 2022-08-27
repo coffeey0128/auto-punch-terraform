@@ -10,7 +10,7 @@
 
 ## Flow
 
-![auto-punch-flow](https://github.com/coffeey0128/auto-punch-terraform/blob/main/auto-punch-terraform.jpg?raw=true)
+![auto-punch-flow](https://github.com/coffeey0128/auto-punch-terraform/blob/main/auto-punch-flow.jpg)
 
 ## 動機
 
