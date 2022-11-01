@@ -84,7 +84,7 @@ async function main(){
             throw 'getDayCardDetail error'
         }
        
-        打卡
+        // 打卡
         res = await axios(gpsConfig)
         console.log("------gps------")
         console.log(res.data)
@@ -104,7 +104,6 @@ async function main(){
 var AWS = require("aws-sdk");
 exports.handler = async (event) => {
     console.log("------------------Punch Start!!------------------")
-
     await main()
    
     var message =""
@@ -121,12 +120,12 @@ exports.handler = async (event) => {
     var punchStatus = false
     if (res.data.success == true) {
         if(nowTime.getHours()+8<18){
-            if(res.data.data[0].timeStart!=null)
+            if(res.data.data[0].timeStart!="")
             {
                 punchStatus = true
             }
         }else{
-            if(res.data.data[0].timeEnd!=null)
+            if(res.data.data[0].timeEnd!="")
             {
                 punchStatus = true
             }
